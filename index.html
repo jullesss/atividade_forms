@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário de Evento - Kenzie Academy</h1>
+        <form action="">
+            <ul>
+            <p></p>
+            <li>
+                <label for="nomeuser">Nome:</label>
+                <p></p>
+                <input type="text" name="nomeuser" placeholder="Digite seu nome aqui..." maxlength="30" required="true" id="nomeuser"/>
+            </li>
+
+            
+            <p></p>
+            <li>
+            <label for="email">E-mail:</label>
+            <p></p>
+                <input type="email" name="email" placeholder="Digite seu e-mail aqui..." maxlength="30" required="true" id="email"/>
+            </li>
+
+
+            <div>
+            <li>
+                <label for="caixadetexto">Descrição:</label>
+            </li>
+
+                <textarea id="caixadetexto" name="sobrevc" placeholder="Fale mais sobre você aqui..." cols="30" rows="5" maxlength="200"></textarea>
+            </div>
+            
+
+            <li>
+                <label for="modulo" >Módulo:</label>
+                <p></p>
+                <select id="modulo" name="seumodulo" required>
+                    <option value="">Escolher Módulo</option>
+                    <option value="M1">Módulo 1</option>
+                    <option value="M2">Módulo 2</option>
+                    <option value="M3">Módulo 3</option>
+                </select>
+            </li> 
+
+
+            <p></p>
+            <li>
+                <label for="senha">Senha:</label>
+                <p></p>
+                <input type="password" name="senha" placeholder="Digite sua senha aqui..." minlength="10" required="true" id="senha"/>
+            </li>
+            <p></p>
+            <li>
+                <label for="senha">Confirmar Senha:</label>
+                <p></p>
+                <input type="password" name="senha" placeholder="Digite sua senha novamente aqui..." minlength="10" required="true" id="senha"/>
+            </li>
+
+
+            <li>
+            <p>Deseja receber novidades sobre nós em seu e-mail?</p>
+            </li>
+
+            <input type="radio" name="escolhido" id="sim" value="yes" required>
+            <label for="sim">Sim</label>
+
+            <input type="radio" name="escolhido" id="nao" value="no" required>
+            <label for="nao">Não</label>
+
+            
+            <p></p>
+            <button type="submit">Cadastrar</button>
+            </ul>
+        </form>
+
+</body>
+</html>
